@@ -1,20 +1,18 @@
 brand:
-  name: Start Bootstrap
+  name: Uwezo Technologies
 menu-string: Menu
 
 nav:
-  - title: Services
-    url: '#services'
-  - title: Portfolio
-    url: '#portfolio'
-  - title: About
-    url: '#about'
+  - title: UT Model
+    url: '#product'
+  - title: Installation
+    url: '#install'
   - title: Team
     url: '#team'
   - title: Contact
     url: '#contact'
 
-copyright: Copyright &copy; Your Website 2018
+copyright: Copyright &copy; Uwezo Technologies 2018
 
 social-buttons:
   - icon: fa fa-twitter

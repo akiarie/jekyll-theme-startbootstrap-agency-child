@@ -1,11 +1,17 @@
 intro:
-  lead-in: "Welcome To Uwezo Technologies"
-  heading: It's Nice To Meet You
+  lead-in: "We Are Uwezo Technologies"
   btn: Tell Me More
+  mission: We are a dedicated group of trained engineers with a passion for innovative technologies.
+           Our name derives from a Swahili term meaning <i>power</i> or <i>ability</i>, for it is
+           our sincere ambition to put energy control into the hands of the average South African family.
 
-services:
-  heading: Services
-  subheading: 
+product:
+  heading: The UT Model
+  subheading: An IoT device that allows leverages intelligent cloud-based algorithms in order to optimize your geyser power consumption.
+       
+installation:
+  heading: Installation Procedure
+  subheading: The three steps to owning your very own UT Model 
   service:
     - icon: fa fa-money
       heading: Purchase
@@ -18,37 +24,6 @@ services:
     - icon: fa fa-wrench
       heading: Installation
       text: One of our dedicated electricians will come and install your UT Model within 3 working days of the purchase, at your convenience.
-          
-  portfolio:
-
-
-  heading: Portfolio
-  subheading: Lorem ipsum dolor sit amet consectetur.
-
-about:
-  heading: About
-  subheading: Lorem ipsum dolor sit amet consectetur.
-  timeline:
-    - image: img/about/1.jpg
-      date: 2009-2011
-      title: Our Humble Beginnings
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-    - image: img/about/2.jpg
-      date: March 2011
-      title: An Agency is Born
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-    - image: img/about/3.jpg
-      date: December 2012
-      title: Transition to Full Service
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-    - image: img/about/4.jpg
-      date: July 2014
-      title: Phase Two Expansion
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-
-  end1: Be Part
-  end2: Of Our
-  end3: Story!
 
 team:
   heading: Our Team
@@ -56,66 +31,66 @@ team:
   members:
     - name: Hebert Tema
       role: CEO
-      img: img/team/hebert.jpg
+      img: ../../assets/team/hebert.jpg
       social-buttons:
         - icon: fa fa-twitter
           url: "#" 
-        - icon: fa fa-facebook
+        - icon: fa fa-book
           url: "#"
         - icon: fa fa-linkedin
           url: "#"
     
     - name: Amisi Kiarie
       role: CFO
-      img: img/team/amisi.jpg
+      img: ../../assets/team/amisi.jpg
       social-buttons:
         - icon: fa fa-twitter
           url: "#" 
-        - icon: fa fa-facebook
+        - icon: fa fa-book
           url: "#"
         - icon: fa fa-linkedin
           url: "#"
      
     - name: Munsanje Mweene
       role: Software Engineer
-      img: img/team/munsanje.jpg
+      img: ../../assets/team/munsanje.jpg
       social-buttons:
         - icon: fa fa-twitter
           url: "#" 
-        - icon: fa fa-facebook
+        - icon: fa fa-book
           url: "#"
         - icon: fa fa-linkedin
           url: "#"
     
     - name: Claude Betz
       role: Electronics Engineer
-      img: img/team/claude.jpg
+      img: ../../assets/team/claude.jpg
       social-buttons:
         - icon: fa fa-twitter
           url: "#" 
-        - icon: fa fa-facebook
+        - icon: fa fa-book
           url: "#"
         - icon: fa fa-linkedin
           url: "#"
  
     - name: Yolanda Sangweni
       role: Marketing
-      img: img/team/yolanda.jpg
+      img: ../../assets/team/yolanda.jpg
       social-buttons:
         - icon: fa fa-twitter
           url: "#"
-        - icon: fa fa-facebook
+        - icon: fa fa-book
           url: "#"
         - icon: fa fa-linkedin
           url: "#"    
 
     - name: Makabongwe Nkabinde
       role: Client Relations
-      img: img/team/makabongwe.jpg
+      img: ../../assets/team/makabongwe.jpg
       social-buttons:
         - icon: fa fa-twitter
           url: "#"
-        - icon: fa fa-facebook
+        - icon: fa fa-book
           url: "#"
         - icon: fa fa-linkedin
           url: "#"

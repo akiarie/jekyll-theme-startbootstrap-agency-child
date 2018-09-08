@@ -10,6 +10,8 @@ collections:
   projects:
 
 # Build settings
-remote_theme: SotiriosVrachas/jekyll-theme-startbootstrap-agency@0.2.4
+# remote_theme: SotiriosVrachas/jekyll-theme-startbootstrap-agency@0.2.4
 plugins:
   - jekyll-remote-theme
+
+theme: jekyll-theme-startbootstrap-agency

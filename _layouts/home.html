@@ -1,0 +1,147 @@
+---
+layout: default
+---
+{%- assign assets_path = "assets/" -%}
+{%- if site.assets_path -%}
+  {%- assign assets_path = site.assets_path -%}
+{%- endif -%}
+    {% assign ws = '' %}
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div style="text-align: left" class="intro-text">
+          <div style="font-size: 3em; text-shadow: 2px 2px 0px #000000;" class="intro-lead-in">{{ site.data.home.intro.lead-in }}</div>
+          <h4 style="padding: 1.5em 0 0">Mission Statement</h4>
+          <p style="max-width: 50%" >{{ site.data.home.intro.mission }}</p> 
+        </div>
+      </div>
+    </header>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="product">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">{{ site.data.home.product.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.home.product.subheading }}</h3>
+          </div>
+        </div>
+        <div class="row">
+          <img class="mx-auto" style="padding: 0 2%; max-width: 48%" src="{{ assets_path }}esave.png" alt="">
+          <img class="mx-auto" style="padding: 0 2%; max-width: 48%" src="{{ assets_path }}esave2.png" alt="">
+        </div>
+      </div>
+    </section>
+    
+    <!-- Services -->
+    <section id="install">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">{{ site.data.home.installation.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.home.installation.subheading }}</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          {%- for service in site.data.home.installation.service -%}
+          {% assign ws = '' %}
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="{{ service.icon }} fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">{{ service.heading }}</h4>
+            <p class="text-muted">{{ service.text }}</p>
+          </div>
+          {%- endfor -%}
+        {% assign ws = '' %}
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Team -->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">{{ site.data.home.team.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.home.team.subheading }}</h3>
+          </div>
+        </div>
+        <div class="row">
+          {%- for member in site.data.home.team.members -%}
+          {% assign ws = '' %}
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{{ assets_path }}{{ member.img }}" alt="">
+              <h4>{{ member.name }}</h4>
+              <p class="text-muted">{{ member.role }}</p>
+              <ul class="list-inline social-buttons">
+                {%- for sm in member.social-buttons -%}
+                {% assign ws = '' %}
+                <li class="list-inline-item">
+                  <a href="{{ sm.url }}">
+                    <i class="{{ sm.icon }}"></i>
+                  </a>
+                </li>
+                {%- endfor -%}
+              {% assign ws = '' %}
+              </ul>
+            </div>
+          </div>
+          {%- endfor -%}
+        {% assign ws = '' %}
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">{{ site.data.home.team.text }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">{{ site.data.home.contact.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.home.contact.subheading }}</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="{{ site.data.home.contact.name }}" required="required" data-validation-required-message="{{ site.data.home.contact.name-required }}">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" type="email" placeholder="{{ site.data.home.contact.email }}" required="required" data-validation-required-message="{{ site.data.home.contact.email-required }}">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" type="tel" placeholder="{{ site.data.home.contact.phone }}" required="required" data-validation-required-message="{{ site.data.home.contact.phone-required }}">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="{{ site.data.home.contact.message }}" required="required" data-validation-required-message="{{ site.data.home.contact.message-required }}"></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">{{ site.data.home.contact.btn }}</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
